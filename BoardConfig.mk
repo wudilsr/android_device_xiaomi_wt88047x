@@ -72,6 +72,9 @@ BOARD_KERNEL_CMDLINE += phy-msm-usb.floated_charger_enable=1
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 BOARD_NO_SECURE_DISCARD := true
 
+# Security Patch Level
+VENDOR_SECURITY_PATCH := 2017-01-01
+
 # SELinux
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
