@@ -16,7 +16,7 @@
 $(call inherit-product, device/xiaomi/wt88047x/full_wt88047x.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_k.mk)
