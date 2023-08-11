@@ -83,6 +83,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 TARGET_LD_SHIM_LIBS += \
     /vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so
 
+# System Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # WiFi
 TARGET_PROVIDES_WCNSS_QMI := true
 

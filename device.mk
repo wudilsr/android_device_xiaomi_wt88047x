@@ -116,9 +116,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/_hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/_hals.conf
 
-# System Properties
-$(call inherit-product, device/xiaomi/wt88047x/system_prop.mk)
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:system/etc/sysconfig/qti_whitelist.xml
 
@@ -129,18 +126,6 @@ PRODUCT_COPY_FILES += \
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.wt88047x
-
-# USB ID
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.usb.vid=2717 \
-    ro.usb.id.midi=90BA \
-    ro.usb.id.midi_adb=90BB \
-    ro.usb.id.mtp=ff60 \
-    ro.usb.id.mtp_adb=ff68 \
-    ro.usb.id.ptp=ff10 \
-    ro.usb.id.ptp_adb=ff18 \
-    ro.usb.id.ums=ff20 \
-    ro.usb.id.ums_adb=ff28
 
 # VNDK
 PRODUCT_COPY_FILES += \
