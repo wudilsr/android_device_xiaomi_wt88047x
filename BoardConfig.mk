@@ -83,5 +83,8 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 TARGET_LD_SHIM_LIBS += \
     /vendor/lib/libmmcamera2_imglib_modules.so|libshim_camera.so
 
+# WiFi
+TARGET_PROVIDES_WCNSS_QMI := true
+
 # inherit from the proprietary version
 include vendor/xiaomi/wt88047x/BoardConfigVendor.mk
